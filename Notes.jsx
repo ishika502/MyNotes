@@ -22,7 +22,8 @@ const inputEvent = (event) => {
     console.log(note);
 };
 
-const addEvent=()=>{
+const addEvent=(e)=>{
+  e.preventDefault();
   props.passNote(note);
   setnote({
     title:"",
